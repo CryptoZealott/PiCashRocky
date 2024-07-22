@@ -12,7 +12,7 @@ fi
 
 
 # Pawns.app (IPRoyal)
-curl -L https://download.iproyal.com/pawns-cli/latest/linux_`uname -m`/pawns-cli > /usr/bin/pawns-cli
+curl -L https://cdn.pawns.app/download/cli/latest/linux_x86_64/pawns-cli > /usr/bin/pawns-cli
 chmod +x /usr/bin/pawns-cli
 
 
@@ -23,15 +23,15 @@ chmod +x /usr/bin/pawns-cli
 
 
 # Peer2Profit
-if [[ `uname -m` != "x86_64" ]]
-then 
-    curl -L https://github.com/chashtag/PiCash/releases/download/bin/p2pclient_0.63_arm64.deb > /tmp/p2p.deb
-else
-    curl -L https://updates.peer2profit.app/peer2profit_0.48_amd64.deb > /tmp/p2p.deb
-fi
+#if [[ `uname -m` != "x86_64" ]]
+#then 
+    #curl -L https://github.com/chashtag/PiCash/releases/download/bin/p2pclient_0.63_arm64.deb > /tmp/p2p.deb
+#else
+    #curl -L https://updates.peer2profit.app/peer2profit_0.48_amd64.deb > /tmp/p2p.deb
+#fi
 
-dpkg -x /tmp/p2p.deb /
-rm -rf /tmp/p2p.deb
+#dpkg -x /tmp/p2p.deb /
+#rm -rf /tmp/p2p.deb
 
 
 # Traffmonetizer
